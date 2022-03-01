@@ -4,9 +4,10 @@
 			puzzlePieces = document.querySelectorAll(".puzzle-pieces *"),
 			dropZones = document.querySelectorAll(".drop-zone");
 
-	const puzzlePaths = ["topLeft0", "topRight0", "bottomLeft0", "bottomRight0"]
+	const puzzlePaths = ["topLeft", "topRight", "bottomLeft", "bottomRight"]
 
 	function changeImgSet() {
+
 		gameBoard.style.backgroundImage = `url(images/backGround${this.dataset.bgref}.jpg)`;
 
 		puzzlePaths.forEach((img, index) => {
@@ -26,13 +27,13 @@
 
 	function allowDrop(event) {
 		event.preventDefault();
-		console.log('dropped on me');
+		if (this.childElementCount > 0) {return; }
+		console.log('dropped');
 
-	let droppedEl = event.dataTransfer.getData('currentItem');
-		console.log(droppedEl);
+		let droppedEl = event.dataTransfer.getData('currentItem');
+				console.log(droppedEl);
 
-		this.appendChild(document.querySelector(`#${droppedEl}`));
-
+				this.appendChild(document.querySelector(`#${droppedEl}`));
 	}
 
 
