@@ -27,13 +27,19 @@ This features a four piece puzzle that involves interactivity of drag and drop a
 
 ## Credits
 ***
-JS help [W3C](https://www.w3schools.com/jsref/prop_element_childelementcount.asp)
-JS help [MDN](https://developer.mozilla.org/en-US/docs/Web/API/Element/firstElementChild)
-JS help [MDN](https://developer.mozilla.org/en-US/docs/Web/API/Element/children)
-JS help [MDN](https://developer.mozilla.org/en-US/docs/Web/API/Node/removeChild)
-JS help [MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/return)
-
+##### JS help
 <br>
+
+[W3C](https://www.w3schools.com/jsref/prop_element_childelementcount.asp)
+<br>
+ [MDN](https://developer.mozilla.org/en-US/docs/Web/API/Element/firstElementChild)
+<br>
+[MDN](https://developer.mozilla.org/en-US/docs/Web/API/Element/children)
+<br>
+[MDN](https://developer.mozilla.org/en-US/docs/Web/API/Node/removeChild)
+<br>
+[MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/return)
+
 
 ## License
 ***
