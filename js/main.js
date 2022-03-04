@@ -2,7 +2,8 @@
 	let theThumbnails = document.querySelectorAll("#buttonHolder img"),
 			gameBoard = document.querySelector(".puzzle-board"),
 			puzzlePieces = document.querySelectorAll(".puzzle-pieces *"),
-			dropZones = document.querySelectorAll(".drop-zone");
+			dropZones = document.querySelectorAll(".drop-zone"),
+			clearBtn = document.querySelector("button");
 
 	const puzzlePaths = ["topLeft", "topRight", "bottomLeft", "bottomRight"]
 
@@ -11,8 +12,12 @@
 		gameBoard.style.backgroundImage = `url(images/backGround${this.dataset.bgref}.jpg)`;
 
 		puzzlePaths.forEach((img, index) => {
-			puzzlePieces[index].src = `images/${img + this.dataset.bgref}.jpg)`;
+			puzzlePieces[index].src =`images/${img + this.dataset.bgref}.jpg`;
 		});
+
+		/* resetpuz(); */
+
+
 	}
 
 	function dragStarted(event) {
@@ -27,15 +32,24 @@
 
 	function allowDrop(event) {
 		event.preventDefault();
-		if (this.childElementCount > 0) {return; }
-		console.log('dropped');
+
+		if (this.childElementCount == 1) {return; }
+		console.log('space filled');
+
 
 		let droppedEl = event.dataTransfer.getData('currentItem');
 				console.log(droppedEl);
 
 				this.appendChild(document.querySelector(`#${droppedEl}`));
 	}
+/*
+	function resetpuz() {
+		dropZones.forEach((zone, i) => {
 
+		});
+
+	}
+*/
 
 	theThumbnails.forEach(item => item.addEventListener("click", changeImgSet));
 

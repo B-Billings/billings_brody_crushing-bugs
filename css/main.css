@@ -121,3 +121,7 @@ footer {
 #buttonHolder img:hover {
 	opacity:.5;
 }
+
+button{
+	padding: 20px
+}
