@@ -5,6 +5,9 @@ This is the submission file for Brody Billings Crushing Bugs Assignment in Multi
 
 This features a four piece puzzle that involves interactivity of drag and drop and switching between four different images to solve. There is a reset puzzle piece feature trying to be added at the moment.
 
+Written plan link
+https://docs.google.com/document/d/1BvzGOdvlGkyTktiPFZaev_w8209ATTqoucok4qdi_MQ/edit?usp=sharing
+
 ## Installation
 ***
 1. Clone it to your PC/Mac
