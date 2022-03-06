@@ -3,7 +3,7 @@
 This is the submission file for Brody Billings Crushing Bugs Assignment in Multi-Media Authoring
 <br>
 
-This features a four piece puzzle that involves interactivity of drag and drop and switching between four different images to solve. There is a reset puzzle piece feature trying to be added at the moment.
+This features a four piece puzzle that involves interactivity of drag and drop and switching between four different images to solve. There is a reset puzzle piece feature trying to be added at the moment. I could not solve the reset I attempted with many different codes and styles but could not solve it; However, I did learn a-lot of things from researching possible solutions. I look forward to learning how this bug is solved and probably realizing I was overthinking the solution.
 
 Written plan link
 https://docs.google.com/document/d/1BvzGOdvlGkyTktiPFZaev_w8209ATTqoucok4qdi_MQ/edit?usp=sharing
