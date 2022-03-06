@@ -3,20 +3,17 @@
 			gameBoard = document.querySelector(".puzzle-board"),
 			puzzlePieces = document.querySelectorAll(".puzzle-pieces *"),
 			dropZones = document.querySelectorAll(".drop-zone");
-
+ 			zone = document.querySelector ["drop-zone tl","drop-zone tr","drop-zone bl","drop-zone br"];
 
 	const puzzlePaths = ["topLeft", "topRight", "bottomLeft", "bottomRight"]
 
-
 	function changeImgSet() {
-
+resetpuz()
 		gameBoard.style.backgroundImage = `url(images/backGround${this.dataset.bgref}.jpg)`;
 
 		puzzlePaths.forEach((img, index) => {
 			puzzlePieces[index].src =`images/${img + this.dataset.bgref}.jpg`;
 		});
-
- 	resetpuz()
 	}
 
 	function dragStarted(event) {
@@ -41,14 +38,17 @@
 
 				this.appendChild(document.querySelector(`#${droppedEl}`));
 	}
-
+//this function removes the puzzle pieces from the drop zone area
 	function resetpuz() {
-		dropZones.forEach(dropZones => {
-			if (dropZones.children("puzzlePieces")){
-				droppedEl.return;
-
-			}
-		})
+		//tests are put in to see where my function breaks during the trial and error process
+		console.log('test 1');
+		dropZones.forEach(zone =>{
+		zone.remove('puzzlePieces');
+	console.log('test 2');
+})
+/* trying to figure out how to reset the puzzle pieces
+	document.getElementsByClassName('.puzzle-board').reset();
+*/
 	}
 
 
